@@ -1,0 +1,45 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 80px;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.url-form,
+.url-history {
+    margin-bottom: 30px;
+}
+
+.btn btn-primary {
+    color: #1f5c7a;
+}
+
+.Shorten {
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+table th {
+    background-color: #1f5c7a;
+    color: white;
+}
+
+img {
+    width: 30%;
+    height: 30%;
+}
