@@ -1,6 +1,0 @@
-[build]
-command = "npm run build"
-publish = "public" 
-
-[context.production.environment]
-MONGODB_URI = "mongodb+srv://admin:1234@cluster0.d2bkkyz.mongodb.net/"
