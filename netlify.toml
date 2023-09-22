@@ -1,6 +1,6 @@
 [build]
-command = "npm run build" # คำสั่งสำหรับสร้างเว็บแอพ
-publish = "public" # โฟลเดอร์ที่ใช้ในการ Publish
+command = "npm run build"
+publish = "public" 
 
 [context.production.environment]
-MONGODB_URI = "mongodb+srv://admin:1234@cluster0.d2bkkyz.mongodb.net/" # เพิ่ม URI ของ MongoDB ของคุณ
+MONGODB_URI = "mongodb+srv://admin:1234@cluster0.d2bkkyz.mongodb.net/"
