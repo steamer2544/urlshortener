@@ -8,6 +8,8 @@ app.use(express.json())
 
 const connectDB = require('./connectMongo')
 
+connectDB()
+
 // import the model here
 const ShortURL = require("./models/url");
 const QRCode = require("qrcode");
