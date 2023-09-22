@@ -1,6 +1,13 @@
 const express = require("express");
 const app = express();
-const mongoose = require("mongoose");
+//const mongoose = require("mongoose");
+
+require('dotenv').config()
+
+app.use(express.json())
+
+const connectDB = require('./connectMongo')
+
 // import the model here
 const ShortURL = require("./models/url");
 const QRCode = require("qrcode");
@@ -102,7 +109,7 @@ app.post("/delete/:shortid", async (req, res) => {
     res.sendStatus(500);
   }
 });
-
+/*
 // Setup mongoodb connection
 mongoose.connect("mongodb+srv://admin:1234@cluster0.d2bkkyz.mongodb.net/", {
   useNewUrlParser: true,
@@ -120,3 +127,10 @@ mongoose.connection.on("open", (req, res) => {
       console.error(`Cannot start listening on port:${port}`);
     });
 });
+*/
+
+const PORT = process.env.PORT
+
+app.listen(8080, () => {
+  console.log("Server is running on port 8080")
+})

@@ -22,7 +22,7 @@ Clone this repository:
 3. Start the server:
   - npm start
 
-4. Access the application in your web browser at http://localhost:3000.
+4. Access the application in your web browser at http://localhost:8080.
 
 Usage
   - Shorten a URL: Enter a long URL on the home page and click "Shorten."
