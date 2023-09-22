@@ -109,15 +109,14 @@ mongoose.connect("mongodb+srv://admin:1234@cluster0.d2bkkyz.mongodb.net/", {
   useUnifiedTopology: true,
 });
 
-mongoose.connection.on("open", (req) => {
+mongoose.connection.on("open", (req, res) => {
   // wait for mongodb connection before server starts
   const port = process.env.PORT || 3000;
-  const baseUrl = req.protocol + "://" + req.get("host");
   app
     .listen(port, () => {
-      console.log(`App started at ${baseUrl}:${port}/`);
+      console.log(`App started at http://localhost:${port}/`);
     })
-    .on("error!", (err) => {
+    .on("error", (err) => {
       console.error(`Cannot start listening on port:${port}`);
     });
 });
