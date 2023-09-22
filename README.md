@@ -9,6 +9,7 @@ This is a simple URL shortener web application built with Node.js, Express.js, a
 - Delete URLs from the history.
 
 ## Deploy URL
+ you can access the website here
   - https://urlshortener-dy6l.onrender.com
 
 ## Getting Started
