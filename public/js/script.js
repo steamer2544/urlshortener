@@ -1,5 +1,5 @@
 function copyLink(shortUrl) {
-    const linkToCopy = `http://localhost:3000/${shortUrl}`;
+    const linkToCopy = `${shortUrl}`;
     const textArea = document.createElement("textarea");
     textArea.value = linkToCopy;
     document.body.appendChild(textArea);
