@@ -111,7 +111,7 @@ app.post("/delete/:shortid", async (req, res) => {
     res.sendStatus(500);
   }
 });
-/*
+
 
 const PORT = process.env.PORT
 
