@@ -109,12 +109,13 @@ mongoose.connect("mongodb+srv://admin:1234@cluster0.d2bkkyz.mongodb.net/", {
   useUnifiedTopology: true,
 });
 
-mongoose.connection.on("open", () => {
+mongoose.connection.on("open", (req) => {
   // wait for mongodb connection before server starts
-  const port = process.env.PORT || 3000; // ถ้าไม่มีการกำหนดค่าพอร์ตจากตัวแปร env จะใช้ค่าพอร์ตเริ่มต้นคือ 3000 แทน
+  const port = process.env.PORT || 3000;
+  const baseUrl = req.protocol + "://" + req.get("host");
   app
     .listen(port, () => {
-      console.log(`App started at http://localhost:${port}/`);
+      console.log(`App started at ${baseUrl}:${port}/`);
     })
     .on("error!", (err) => {
       console.error(`Cannot start listening on port:${port}`);
