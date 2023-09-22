@@ -112,24 +112,6 @@ app.post("/delete/:shortid", async (req, res) => {
   }
 });
 /*
-// Setup mongoodb connection
-mongoose.connect("mongodb+srv://admin:1234@cluster0.d2bkkyz.mongodb.net/", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-
-mongoose.connection.on("open", (req, res) => {
-  // wait for mongodb connection before server starts
-  const port = process.env.PORT || 3000;
-  app
-    .listen(port, () => {
-      console.log(`App started at http://localhost:${port}/`);
-    })
-    .on("error", (err) => {
-      console.error(`Cannot start listening on port:${port}`);
-    });
-});
-*/
 
 const PORT = process.env.PORT
 
