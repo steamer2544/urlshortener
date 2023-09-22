@@ -8,6 +8,9 @@ This is a simple URL shortener web application built with Node.js, Express.js, a
 - Generate QR codes for shortened URLs.
 - Delete URLs from the history.
 
+## Deploy URL
+  - https://urlshortener-dy6l.onrender.com
+
 ## Getting Started
 Clone this repository:
 
