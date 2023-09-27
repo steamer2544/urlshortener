@@ -1,9 +1,0 @@
-ShortURL Collection
--------------------
-_id: ObjectId
-full: String
-short: String
-clicks: Number
-deleted: Boolean
-
-//เนื่องจาก MongoDB ไม่ใช้โครงสร้างแบบตารางเหมือน SQL ดังนั้น Diagram ที่ได้จะไม่มีความสัมพันธ์ในทางเดียวกันกับ ER Diagram ของ SQL แต่ยังสามารถแสดงโครงสร้างข้อมูลของ Collection แต่ละตัวได้ ดังนั้นจึงได้เลือกแสดงโดยใช้ Schema Diagram: โดยใช้รูปแบบของ BSON Schema ที่สร้างข้างต้นในการแสดง Diagram ของ Collection "ShortURL"
